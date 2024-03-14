@@ -1,12 +1,13 @@
-package com.example.kotlinflowsample.viewmodel
+package com.example.kotlinflowsample.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.kotlinflowsample.model.CommentModel
-import com.example.kotlinflowsample.network.CommentApiState
-import com.example.kotlinflowsample.network.Status
-import com.example.kotlinflowsample.repository.CommentsRepository
-import com.example.kotlinflowsample.utils.AppConfig
+import com.example.kotlinflowsample.data.model.CommentModelResponse
+import com.example.kotlinflowsample.data.network.CommentApiState
+import com.example.kotlinflowsample.data.network.Status
+import com.example.kotlinflowsample.data.repository.CommentsRepository
+import com.example.kotlinflowsample.data.utils.AppConfig
+import com.example.kotlinflowsample.presentation.model.CommentUI
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.launch
@@ -22,7 +23,7 @@ class CommentViewModel : ViewModel() {
     val commentState = MutableStateFlow(
         CommentApiState(
             Status.LOADING,
-            CommentModel(),
+            CommentUI(),
             ""
         )
     )

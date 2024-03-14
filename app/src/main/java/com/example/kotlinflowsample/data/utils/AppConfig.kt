@@ -1,6 +1,6 @@
-package com.example.kotlinflowsample.utils
+package com.example.kotlinflowsample.data.utils
 
-import com.example.kotlinflowsample.network.ApiService
+import com.example.kotlinflowsample.data.network.ApiService
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

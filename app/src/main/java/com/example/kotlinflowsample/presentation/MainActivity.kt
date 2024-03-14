@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.example.kotlinflowsample.data.network.Status
 import com.example.kotlinflowsample.databinding.ActivityMainBinding
-import com.example.kotlinflowsample.network.Status
-import com.example.kotlinflowsample.viewmodel.CommentViewModel
+import com.example.kotlinflowsample.presentation.viewmodel.CommentViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 

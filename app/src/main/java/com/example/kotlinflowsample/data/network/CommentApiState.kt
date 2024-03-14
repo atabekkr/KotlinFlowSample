@@ -1,4 +1,4 @@
-package com.example.kotlinflowsample.network
+package com.example.kotlinflowsample.data.network
 
 // A helper class to handle states
 data class CommentApiState<out T>(val status: Status, val data: T?, val message: String?) {
